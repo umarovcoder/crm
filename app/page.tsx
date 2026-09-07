@@ -1,5 +1,6 @@
 import CRM from "./crm-simple";
+import AuthGuard from "./auth-guard";
 
 export default function Page() {
-  return <CRM />;
+  return <AuthGuard><CRM /></AuthGuard>;
 }
